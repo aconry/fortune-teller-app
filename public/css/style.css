@@ -1,0 +1,91 @@
+body {
+  
+  padding: 3em;
+  font-size: 1em;
+  font-family: 'Calligraffitti', cursive;
+  background-image: url("../images/background_image.jpg");
+  background-attachment: fixed;
+
+}    
+
+a {
+  
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+#life
+{
+
+    padding: 2em;
+    margin: 2em;
+    color: white;
+    border-style: solid;
+    border-color:black;
+    background-color: #C5A645;
+   
+
+}
+
+#heart
+{
+
+    padding: 2em;
+    margin: 2em;
+    color: white;
+    background-color: #DB704D;
+     border-style: solid;
+    border-color:black;
+}
+
+h1 {
+  
+  font-size: 3em;
+  font-family: 'Calligraffitti', cursive;
+  font-weight: bold
+}    
+  
+h2 {
+  
+  font-size: 1.5em;
+  font-family: 'Calligraffitti', cursive;
+  font-weight: bold;
+  text-align: center;
+}   
+
+h3 {
+  
+  font-size: 1.2em;
+  font-family: 'Calligraffitti', cursive;
+  text-align: justify;
+  
+}
+
+input[type=submit] {
+  padding:2em; 
+  background: #eee; 
+  font-size: 1.2em;
+  font-family: 'Calligraffitti', cursive;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  
+  padding: 1em;
+  margin: 2em;
+  
+}
+
+.header_image {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}

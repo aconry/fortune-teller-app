@@ -1,0 +1,94 @@
+<html>
+  
+    <head>    
+    
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    
+  <title>Your Heart Line</title>
+  </head>
+  
+  <body>
+        <img class="header_image" src="images/heart_line_logo.png">
+
+<form method="POST" action="/heart">
+  
+<fieldset>
+    <legend>HEART LINE LENGTH</legend>
+  
+    <label  style="display: inline; " for="heart_line_length_01">
+    <img src="images/heart_length_long.png"></label>
+  <input type="radio" name ="heart_line_length" id="heart_line_length_01" value="long">
+  
+    <label  style="display: inline; " for="heart_line_length_02">
+    <img src="images/heart_length_short.png"></label>
+  <input type="radio" name ="heart_line_length" id="heart_line_length_02" value="short">
+  <br />
+  
+</fieldset>
+  
+<fieldset>
+  <legend>HEART LINE START</legend>
+
+    <label  style="display: inline; " for="heart_start_01">
+    <img src="images/heart_start_low.png"></label>
+
+  <input type="radio" name ="heart_line_start" id ="heart_start_01"value="high">
+
+    <label  style="display: inline; " for="heart_start_02">
+    <img src="images/heart_start_high.png"></label>
+  <input type="radio" name ="heart_line_start" value="low" id="heart_start_02">
+
+</fieldset>
+
+<fieldset>
+  <legend>HEART LINE END</legend>
+    <label  style="display: inline; " for="heart_end_01">
+    <img src="images/heart_end_high.png"></label>
+
+  <input type="radio" name ="heart_line_end" id ="heart_end_01"value="high">
+  
+ 
+    <label  style="display: inline; " for="heart_end_02">
+    <img src="images/heart_end_low.png"></label>
+
+  <input type="radio" name ="heart_line_end" id="heart_end_02"value="low">
+</fieldset>
+  
+ <fieldset>
+   <legend>HEART LINE SHAPE</legend>
+     <label  style="display: inline; " for="heart_shape_01">
+    <img src="images/heart_shape_curve.png"></label>
+  <input type="radio" name ="heart_line_shape" id = "heart_shape_01"value="curve">
+ 
+   
+     <label  style="display: inline; " for="heart_shape_02">
+    <img src="images/heart_shape_straight.png"></label>
+  <input type="radio" name ="heart_line_shape" id ="heart_shape_02" value="straight">
+</fieldset>
+
+<fieldset>
+  <legend>HEART LINE CURVATURE</legend>
+    <label  style="display: inline; " for="heart_shapes_01">
+    <img src="images/heart_shapes_para.png"></label>
+
+  <input type="radio" name ="heart_line_break" id = "heart_shapes_01" value="para">
+  
+    <label  style="display: inline; " for="heart_shapes_02">
+    <img src="images/heart_shapes_wave.png"></label>
+
+  <input type="radio" name ="heart_line_break" value="wave" id = "heart_shapes_02">
+</fieldset>
+      <p><input type = "submit" value="SUBMIT"></p>
+  
+  <input type="hidden" name ="life_line_length" value="<%= @my_life_line_length %>">
+  <input type="hidden" name ="life_line_start" value="<%= @my_life_line_start %>">
+  <input type="hidden" name ="life_line_end" value="<%= @my_life_line_end %>">
+  <input type="hidden" name ="life_line_shape" value="<%= @my_life_line_shape %>">
+  <input type="hidden" name ="life_line_break" value="<%= @my_life_line_break %>">
+  
+</form>
+  
+  </body> 
+
+</html>
